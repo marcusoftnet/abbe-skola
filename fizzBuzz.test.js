@@ -8,7 +8,7 @@ const should = require('should')
 
 
 function fizzBuzzTal (tal) {
-  return '1'
+  return ''
 }
 
 describe('tal för tal ', () => {
