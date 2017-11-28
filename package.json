@@ -1,0 +1,16 @@
+{
+  "name": "abbe-skola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.js --watch -R min"
+  },
+  "keywords": [],
+  "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  }
+}
