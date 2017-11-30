@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha *.js --watch -R min"
+    "test": "mocha *.js --watch -R list"
   },
   "keywords": [],
   "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
