@@ -1,17 +1,7 @@
-/* global define, it, describe */
+/* global describe, it */
 const should = require('should')
-const say = require('say')
 const fizzBuzz = require('./fizzBuzzer')
-
-
-
-
-
-
-
-
-
-
+console.log(should.notEqual(should, null))
 
 describe('tal för tal - ', () => {
   it('1 ska bli 1', () => { fizzBuzz.tal(1).should.equal('1') })
@@ -29,70 +19,17 @@ describe('tal för tal - ', () => {
   it('13 ska bli 13', () => { fizzBuzz.tal(13).should.equal('13') })
   it('14 ska bli 14', () => { fizzBuzz.tal(14).should.equal('14') })
   it('15 ska bli FizzBuzz', () => { fizzBuzz.tal(15).should.equal('FizzBuzz') })
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 describe('Från ett tal till ett annat - ', () => {
   it('från 1 till 1', () => fizzBuzz.mellanTal(1, 1).should.equal('1'))
   it('från 1 till 2', () => fizzBuzz.mellanTal(1, 2).should.equal('1,2'))
   it('från 1 till 3', () => fizzBuzz.mellanTal(1, 3).should.equal('1,2,Fizz'))
   it('från 1 till 15', () => fizzBuzz.mellanTal(1, 15).should.equal('1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz'))
-  //it('från 1 till 100', () => fizzBuzz.mellanTal(1, 100).should.equal('1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz') )
+  it('från 1 till 100', () => fizzBuzz.mellanTal(1, 100).should.equal('1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz,16,17,Fizz,19,Buzz,Fizz,22,23,Fizz,Buzz,26,Fizz,28,29,FizzBuzz,31,32,Fizz,34,Buzz,Fizz,37,38,Fizz,Buzz,41,Fizz,43,44,FizzBuzz,46,47,Fizz,49,Buzz,Fizz,52,53,Fizz,Buzz,56,Fizz,58,59,FizzBuzz,61,62,Fizz,64,Buzz,Fizz,67,68,Fizz,Buzz,71,Fizz,73,74,FizzBuzz,76,77,Fizz,79,Buzz,Fizz,82,83,Fizz,Buzz,86,Fizz,88,89,FizzBuzz,91,92,Fizz,94,Buzz,Fizz,97,98,Fizz,Buzz'))
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-// say.speak(fizzBuzz.mellanTal(1, 15))
+const say = require('say')
+say.speak(fizzBuzz.mellanTal(1, 1))
 // say.speak(fizzBuzz.mellanTal(1, 10000), 'Samantha', 4)
 // say.speak(fizzBuzz.mellanTal(1, 3), 'Samantha', 0.5)

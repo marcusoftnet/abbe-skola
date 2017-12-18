@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha *.js --watch -R list"
+    "test": "mocha *.js --watch -R list",
+    "lint:fix": "standard --fix"
   },
   "keywords": [],
   "author": "Marcus Hammarberg <marcusoftnet@gmail.com> (http://www.marcusoft.net)",
